@@ -46,7 +46,7 @@ private extension ResultViewController {
         }
         
         if let mostCommonAnimal = animalType.max(by: { $0.1 < $1.1 })?.key {
-            animalLable.text = "В - \(mostCommonAnimal.rawValue)"
+            animalLable.text = "Вы - \(mostCommonAnimal.rawValue)"
             descriptionLabel.text = "\(mostCommonAnimal.definition)"
         }
     }
